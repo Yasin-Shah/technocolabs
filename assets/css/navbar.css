@@ -1,0 +1,159 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
+
+a.brand-logo:hover { opacity: 0.7; }
+
+.brand-logo img {
+    width: 150px;
+    height: 40px;
+    transform: scale(1.6);
+    object-fit: cover;
+}
+
+
+@media screen and (max-width:270px) {
+    .brand-logo img { 
+        width: 120px;
+        height: 30px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .brand-logo img { margin-left: 15px; }
+}
+
+
+a.header-contact {
+    text-decoration: none;
+    color: hsl(200, 18%, 26%);
+    font-weight: bold;
+    letter-spacing: 1px;
+    float: right;
+    margin-top: 12px;
+}
+
+.header-contact span { 
+    font-size: 23px; 
+    vertical-align: -3px;
+}
+
+a.header-contact:hover { opacity: 0.7; }
+
+
+/* ---------- || Navbar ---------- */
+nav.navbar { background: lightgrey; }
+
+.brand-logo-toggler { display: none; }
+
+/** Toggle Menu Bar Icons */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.menu-icon,
+.menu-close-icon {
+    font-size: 1.2em;
+    color: hsl(200, 18%, 26%); 
+}
+
+.menu-close-icon { display: none; }
+
+/** Nav Links */
+.nav-item:hover { background: grey; }
+
+.nav-item a.nav-link {
+    color: hsl(200, 18%, 26%);
+    letter-spacing: 1px;
+    font-size: 14.4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 16px 40px !important;
+}
+
+.nav-item a.nav-link:hover { color: whitesmoke; }
+
+.active { background: rgba(0, 0, 0, 0.3); }
+.active a.nav-link {
+    color: whitesmoke;
+}
+
+
+@media screen and (max-width:992px) {
+
+    #header-logo-contact { display: none; }
+
+    .brand-logo-toggler { 
+        display: block;
+        border: none !important;
+    }
+
+    .brand-logo img { transform: scale(1.55); }
+
+    .navbar { padding: 12px 15px !important; }
+
+    .nav-item a.nav-link { 
+        padding: 8px 40px !important;
+    }
+}
+
+
+/* -------------- || Login Signup Modal -------------- */
+
+.navbar .modal .close:focus, .close:active {
+    border: none;
+    outline: none;
+}
+
+@keyframes loginSignup {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.navbar .modal .modal-content {
+    animation-name: loginSignup;
+    animation-duration: 0.5s;
+}
+
+.navbar #login-opt, #signup-opt {
+    text-decoration: none;
+}
+
+.navbar #login-border, #signup-border {
+    margin-top: 8px;
+}
+
+.navbar .modal-body label {
+    font-size: smaller;
+    color: grey;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+.navbar .modal-body label + input {
+    font-size: .9em;
+}
+
+.navbar .modal-body button {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+a#login-opt, a#signup-opt { 
+    font-weight: bolder; 
+    transition: 0.8s;
+}
+
+a#login-opt:hover, a#signup-opt:hover { color: rebeccapurple; }
+
+/* loginSignupForm.js will use this two selectors */
+.active-border {
+    border-color: rebeccapurple;   
+    border-width: 2px;
+}
+
+.active-opt { color: rebeccapurple; }
