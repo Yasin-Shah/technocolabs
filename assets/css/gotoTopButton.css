@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/************ || GO TO TOP BUTTON ************/
+.top-button-position {
+    position: fixed;
+    bottom: 3%;
+    right: 2.5%;
+    z-index: 1;
+}
+
+.top-button {
+    background: rgba(0,0,0,0.5);
+    font-weight: bold;
+    padding-top: 15px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    opacity: 0.6;
+    transition: 0.7s;
+}
+
+.top-button i { 
+    font-size: 1.3em;
+    color: white;
+ }
+
+.top-button:hover {
+    background: lightseagreen;
+    opacity: 1;  
+
+    -webkit-box-shadow: -1px 9px 20px rgba(128, 128, 128, 04); 
+    -moz-box-shadow: -1px 9px 20px rgba(128, 128, 128, 0.4);
+    box-shadow: -1px 9px 20px rgba(128, 128, 128, 0.4);
+}
+
+@keyframes goto {
+    from { transform: scale(0) rotateX(0deg); }
+    to { transform: scale(1) rotateX(360deg); }
+}
+
+.top-button:hover i {
+    animation-name: goto;
+    animation-timing-function: ease;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+}
