@@ -39,7 +39,7 @@
 </head>
 
 <body>
-    <!-- ======= Top Bar ======= -->
+    <!-- ======= Top Bar======= -->
   <section id="topbar" class="d-none d-lg-block">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
@@ -99,178 +99,7 @@
     </div>
   </header><!-- End Header -->
 
-    <!-- || HEADER & NAVBAR Start -->
-    <header>
-      <!--  <div id="top"></div>
-        <!-- Logo and phone 
-        <div class="container-fluid" id="header-logo-contact">
-            <p class="pt-3 pb-0 px-4">
-                <a href="index.html" class="brand-logo">
-                    <img src="assets/img/brandLogo.png" alt="Brand-logo">
-                </a>
-                <a href="Mobile:+91 8319291391" class="header-contact">
-                    <span class='fas fa-phone-square-alt'></span> +91 8319291391
-                </a>
-            </p>
-        </div>-->
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg p-0">
-            <a class="navbar-brand brand-logo brand-logo-toggler" href="index.html">
-                <img src="assets/img/brandLogo.png" class="" alt="Brand-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fa fa-bars menu-icon" aria-hidden="true" id="bar" onclick="openMenu(this)"></i>
-                    <i class="fa fa-times menu-close-icon" aria-hidden="true" id="cross" onclick="closeMenu(this)"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link ripple" href="index.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                 <!--   <li class="nav-item">
-                        <a class="nav-link ripple" href="about.html">About</a>
-                    </li> -->
-                   <!-- <li class="nav-item">
-                        <a class="nav-link ripple" href="services.html">Services</a>
-                    </li> -->
-                  <!--  <li class="nav-item">
-                        <a class="nav-link ripple" href="blog.html">Blog</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link ripple" href="contact.html">Contact Us</a>
-                    </li>
-                 <!--   <li class="nav-item">
-                        <!-- Triggering Modal -
-                        <a class="nav-link ripple" href="#" data-toggle="modal" data-target="#loginSignup">Login/Signup
-                            <i class="fas fa-sign-in-alt"></i></a>-->
-
-                        <!-- Modal -->
-                        <div class="modal" id="loginSignup" tabindex="-1" role="dialog"
-                            aria-labelledby="loginSignupTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title pl-2 brand-logo" id="exampleModalLongTitle"><img
-                                                src="assets/img/brandLogo.png" alt="brnad-logo"></h5>
-                                        <button type="button" class="close ripple ripple-dark" data-dismiss="modal"
-                                            aria-label="Close"><span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <!-- Login or Signup Option -->
-                                        <div class="row">
-                                            <div class="col-6 text-center py-0">
-                                                <a href="#" class="h6 active-opt" id="login-opt">Login</a>
-                                                <hr class="w-100 active-border">
-                                            </div>
-                                            <div class="col-6 text-center py-0">
-                                                <a href="#" class="h6" id="signup-opt">Signup</a>
-                                                <hr class="w-100" id="">
-                                            </div>
-                                        </div>
-
-                                        <!-- Login Fields -->
-                                        <form action="#" method="post" id="login-form" class="d-block">
-                                            <div class="form-group">
-                                                <label for="login-email" class="form-label">Email Id:</label>
-                                                <input type="email" name="login-email" id="login-email"
-                                                    class="form-control" required />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="login-password">Password:</label>
-                                                <input type="password" name="login-password" id="login-password"
-                                                    class="form-control" required>
-                                            </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="login-remember"
-                                                    name="login-remember" checked>
-                                                <label class="custom-control-label text-dark"
-                                                    for="login-remember">Remember Me</label>
-                                            </div>
-                                            <div class="form-group mt-3">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <button type="submit"
-                                                            class="btn ripple btn-success btn-block">Submit</button>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <button type="reset"
-                                                            class="btn ripple btn-info btn-block">Reset</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-
-                                        <!-- Signup Fields -->
-                                        <form action="#" method="post" id="signup-form"
-                                            onsubmit="return checkPassword()" class="d-none">
-                                            <div class="form-group">
-                                                <label for="signup-username">Username:</label>
-                                                <input type="text" class="form-control" name="signup-username"
-                                                    id="signup-username" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="signup-email">Email Id:</label>
-                                                <input type="email" class="form-control" name="signup-email"
-                                                    id="signup-email" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="signup-contact">Contact No.</label>
-                                                <input type="tel" name="signup-contact" id="signup-contact"
-                                                    title="Format- Indian Contact Number" class="form-control"
-                                                    pattern="^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$" required>
-                                                <small id="contact-error-field" class="mt-2 text-danger"></small>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="signup-pswd">Password:</label>
-                                                <input type="password" name="signup-pswd" id="signup-pswd" minlength="8"
-                                                    maxlength="12" class="form-control" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="signup-cpswd">Confirm Password:</label>
-                                                <input type="password" name="signup-cpswd" id="signup-cpswd"
-                                                    minlength="8" maxlength="12" class="form-control"
-                                                    onchange="return checkPassword()" required>
-                                                <small id="pswd-error-field" class="mt-2 text-danger"></small>
-                                            </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck"
-                                                    name="example1" checked>
-                                                <label class="custom-control-label text-dark" for="customCheck">Remember
-                                                    Me</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <small>By creating an account, You agree to our <a href="./privacy.html"
-                                                        class="text-warning">Terms & Policy</a></small>
-                                            </div>
-                                            <div class="form-group mt-3">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <button type="submit"
-                                                            class="btn btn-success ripple btn-block">Submit</button>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <button type="reset"
-                                                            class="btn btn-info ripple btn-block">Reset</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- || HEADER & NAVBAR End -->
 
 
     <!-- || PRIVACY POLICY Start -->
@@ -600,6 +429,16 @@
     <script src="./assets/js/navbarToggler.js"></script>
     <script src="./assets/js/loginSignupForm.js" defer></script>
     <script src="./assets/js/registerValidation.js" async></script>
+     <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
 
 </body>
 
